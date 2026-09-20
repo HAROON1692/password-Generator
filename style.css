@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --dark-blue:#002339;
+    --white:#fff;
+    --dark-green:#019f55;
+}
+body{
+    background-color: var(--dark-blue);
+      font-family: "Cairo", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 120px auto 40px;
+
+}
+/* style for title */
+.container h1{
+    color: var(--white);
+    line-height: 1.2;
+    
+}
+.container p{
+    color: var(--dark-green);
+    margin-top: 5px;
+    border-bottom: 2px solid #019f55;
+    padding-bottom: 5px;
+    width: 300px;
+    
+}
+/* style for icon */
+.copyIcon{
+    color: var(--dark-green);
+    cursor: pointer;
+}
+.boltIcon{
+    color: var(--white);
+}
+/* style for .inputContainer */
+.inputContainer,.generateButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.inputContainer{
+    margin-top: 50px;
+}
+.inputContainer input{
+    padding: 10px;
+    width: 600px !important;
+    border:none;
+        border-radius: 5px;
+
+}
+.inputContainer input:focus{
+    outline:  2px solid #019f55;
+
+}
+.inputContainer i,.generateButton i{
+    position: absolute;
+    right: 0;
+    font-size: 20px;
+    padding: 5px;
+}
+.inputContainer i{
+    padding-right: 25px;
+}
+/* style for .generateButton */
+.generateButton button{
+    background-color: var(--dark-green);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+.generateButton i{
+    padding-right: 25px;
+    padding-top: 20px;
+}
+.inputContainer input{
+width: 100%;
+}
+.generateButton button{
+    width: 50%;
+    margin-left: auto;
+    font-weight: 600;
+}
